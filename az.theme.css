@@ -21,7 +21,7 @@
     --memberlisttransparency: 0.0;
 
     --font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
-    --textshadow: transparent;
+    --textshadow: var(--transparent);
 
     --accentcolor: 190, 78, 180;
     --accentcolor2: var(--accentcolor);
@@ -57,6 +57,9 @@
     --bdfdb-green: rgb(var(--successcolor));
     --bdfdb-yellow: rgb(var(--warningcolor));
     --bdfdb-red: rgb(var(--dangercolor));
+    --transparent: transparent !important;
+
+    --text-color-white: white;
 }
 
 * {
@@ -122,7 +125,7 @@ html {
 
 .itemCard-3Etziu,
 .peopleListItem-u6dGxF {
-    background: transparent !important;
+    background: var(--transparent) !important;
     border: none !important;
     transition: 0.25s all;
 }
@@ -137,7 +140,8 @@ html {
 
 .guildSeparator-a4uisj,
 .divider-q3P9HC,
-.wrapper-3Hk9OB {
+.wrapper-3Hk9OB,
+.divider-_0um2u {
     visibility: hidden !important;
 }
 
@@ -177,7 +181,7 @@ html {
 .tabBody-2dgbAs,
 .container-ZMc96U {
     border: none !important;
-    background: transparent !important;
+    background: var(--transparent) !important;
 }
 
 .item-3mHhwr {
@@ -190,7 +194,7 @@ html {
 
 .container-1eFtFS,
 .ayers-OrUESM {
-    background: transparent !important;
+    background: var(--transparent) !important;
 }
 
 body,
@@ -221,7 +225,7 @@ body,
 #app-mount .standardSidebarView-E9Pc3j,
 #app-mount .contentRegion-3HkfJJ,
 #app-mount .nowPlayingColumn-1eCBCN {
-    background: transparent;
+    background: var(--transparent);
 }
 
 body::before,
@@ -283,7 +287,7 @@ body::after,
 .uploadArea-2Nu_Vc,
 .backdrop-1BR_bn,
 .backdrop-2ByYRN {
-    background: transparent !important;
+    background: var(--transparent) !important;
     opacity: 1 !important;
     animation: none !important;
 }
@@ -338,11 +342,6 @@ body::after,
     visibility: hidden !important;
 }
 
-.channelName-3KPsGw,
-.overflow-1wOqNV {
-    color: White;
-}
-
 .section-3G9aLW,
 .body-16rSsp {
     background: rgba(40, 40, 40, 0.25) !important;
@@ -353,7 +352,7 @@ body::after,
 .children-3xh0VB,
 .root-8LYsGj,
 .topSection-13QKHs {
-    background: transparent !important;
+    background: var(--transparent) !important;
     border: none !important;
 }
 
@@ -364,7 +363,7 @@ body::after,
 .winButtonClose-3Q8ZH5 {
     background-color: rgba(255, 0, 0, 0.5);
     margin: 5px 5px 5px 5px;
-    border-radius: 50% / 20% 30%;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .winButtonClose-3Q8ZH5:hover {
@@ -374,11 +373,16 @@ body::after,
 .winButtonMinMax-3RsPUg {
     background-color: rgb(204, 207, 33, 0.5);
     margin: 5px 5px 5px 5px;
-    border-radius: 10% / 50%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.winButton-3UMjdg {
+    height: 20px !important;
+    width: 20px !important;
 }
 
 .wordmarkWindows-2dq6rw::before {
-    color: white !important;
+    color: var(--text-color-white) !important;
     content: "nmsl" !important;
     font-size: 14px;
     font-family: "Discord";
@@ -403,8 +407,12 @@ body::after,
 .username-i5-wv- span,
 .sername-i5-wv- span,
 .activityText-1rR-8O,
-.username-h_Y3Us {
-    color: white !important;
+.username-h_Y3Us,
+.item-3XjbnG,
+.header-2Kx1US,
+.channelName-3KPsGw,
+.overflow-1wOqNV {
+    color: var(---text-color-white) !important;
 }
 
 .header-3OsQeK,
@@ -415,4 +423,40 @@ body::after,
     border: none !important;
     box-shadow: none !important;
     border-radius: 0% 0% !important;
+}
+
+.panel-2ZFCRb {
+    border: none !important;
+}
+
+.avatar-3mTjvZ {
+    border: none !important;
+    background: var(--transparent) !important;
+}
+
+.background-3d_SjE,
+.field-21XZwa,.fieldButton-14lHvK {
+    background: var(--transparent) !important;
+}
+
+.tools-kIrEGr,
+.closeButton-PCZcma {
+    background-color: rgba(20, 20, 20, 0.20);
+    margin: 5px 5px 5px 5px !important;
+    border-radius: 15%;
+    padding: 2px 2px 2px 2px;
+}
+
+.keybind-13vtq8 {
+    background: var(--transparent);
+    margin: 5px 5px 5px 5px !important;
+    border-radius: 15%;
+    padding: 2px 2px 2px 2px;
+    color: var(---text-color-white) !important;
+}
+
+.constrainedRow-3y91Xf,
+.field-21XZwa, .fieldList-in8WkP {
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
 }
