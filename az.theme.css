@@ -128,6 +128,7 @@ html {
     background: var(--transparent) !important;
     border: none !important;
     transition: 0.25s all;
+    margin-bottom: 5px;
 }
 
 .itemCard-3Etziu:hover {
@@ -135,7 +136,7 @@ html {
 }
 
 .peopleListItem-u6dGxF:hover {
-    transform: translateY(-1.5px);
+    transform: translateY(-2px);
 }
 
 .guildSeparator-a4uisj,
@@ -439,6 +440,10 @@ body::after,
     background: var(--transparent) !important;
 }
 
+.fieldButton-14lHvK:hover {
+    text-decoration: underline;
+}
+
 .tools-kIrEGr,
 .closeButton-PCZcma {
     background-color: rgba(20, 20, 20, 0.20);
@@ -459,4 +464,12 @@ body::after,
 .field-21XZwa, .fieldList-in8WkP {
     margin: 5px 5px 5px 5px;
     padding: 2px 2px 2px 2px;
+}
+
+.wrapper-1_HaEi {
+    margin-right: 5px;
+}
+
+.channel-1Shao0 {
+    margin: 2.5px 2.5px 2.5px 2.5px;
 }
