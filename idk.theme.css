@@ -1,0 +1,251 @@
+/**
+ * @name idk
+ * @author lt
+ * @version 0.0.1
+ */
+
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css);
+
+:root {
+    --transition-025-linear: 0.25s linear;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: hidden !important;
+}
+
+body,
+/* body														*/
+#app-mount .app-3xd6d0,
+/* app					container							*/
+#app-mount .app-2CXKsg,
+/* app					inner								*/
+#app-mount .loading-1yrGTe,
+/* app					i18n loading						*/
+#app-mount .wrapper-3AZUiP,
+/* app					errorscreen							*/
+#app-mount .bg-1QIAus,
+/* app					background							*/
+#app-mount .layer-86YKbF,
+/* layer				container							*/
+#app-mount .container-2o3qEW,
+/* layer				container							*/
+#app-mount .container-1NXEtd,
+/* channels				inner								*/
+#app-mount .privateChannels-oVe7HL,
+/* dmchannels												*/
+#app-mount .panels-3wFtMD>*,
+/* account/voice		inner								*/
+#app-mount .chat-2ZfjoI,
+/* chat					container							*/
+#app-mount .container-3wLKDe,
+/* chat					forums								*/
+#app-mount .container-2IKOsH,
+/* chat					search								*/
+#app-mount .container-1um7CU,
+/* chat					search inner						*/
+#app-mount .container-3XgAHv,
+/* chat					thread sidebar						*/
+#app-mount .wrapper-3HVHpV,
+/* chat					messages loading					*/
+#app-mount .noChannel-Z1DQK7,
+/* nochannel												*/
+#app-mount .members-3WRCEx,
+/* members													*/
+#app-mount .members-3WRCEx>div,
+/* members				content								*/
+#app-mount .content-3_h0XI,
+/* unavailable												*/
+#app-mount .container-2cd8Mz,
+/* peoples													*/
+#app-mount .container-1oAagU,
+/* peoples				activity list						*/
+#app-mount .applicationStore-2nk7Lo,
+/* nitro													*/
+#app-mount .pageWrapper-2PwDoS,
+/* guilddiscovery											*/
+#app-mount .pageWrapper-1x6lGh,
+/* unihub													*/
+#app-mount .scrollerBase-1Pkza4,
+/* scroller													*/
+#app-mount .standardSidebarView-E9Pc3j,
+/* settings													*/
+#app-mount .contentRegion-3HkfJJ {
+    /* settings				content								*/
+    background: transparent;
+}
+
+/* discord名字 */
+.wordmarkWindows-2dq6rw::after {
+    content: "wdnmd - beta";
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    font-family: "Discord";
+}
+
+.wordmarkWindows-2dq6rw svg {
+    display: none;
+}
+
+.wordmarkWindows-2dq6rw {
+    max-width: 90vw;
+    text-overflow: ellipsis;
+}
+
+
+/* main frame */
+.listItem-3SmSlK .guildSeparator-a4uisj {
+    display: none !important;
+}
+
+.pill-2RsI5Q,
+.pill-2RsI5Q .item-2LIpTv,
+.listItem-3SmSlK {
+    /* 服务器头部 */
+    transition: var(--transition-025-linear)
+}
+
+.listItem-3SmSlK:hover {
+    /* 服务器头部动画 */
+    transform: scale(1.2, 1.2);
+}
+
+.item-3mHhwr {
+    /* 主页导航栏 */
+    transition: var(--transition-025-linear)
+}
+
+.itemCard-3Etziu {
+    /* 用户活动卡 */
+    background: transparent !important;
+    border: none !important;
+    transition: var(--transition-025-linear);
+}
+
+.itemCard-3Etziu:hover {
+    /* 用户活动卡动画 */
+    transform: translateY(-5px);
+}
+
+.emptyCard-KDifrB {
+    /* 空用户卡 */
+    background: none;
+}
+
+.containerDefault-YUSmu3 {
+    /* 服务器列表 */
+    transition: var(--transition-025-linear);
+}
+
+.containerDefault-YUSmu3:hover {
+    /* 服务器列表动画 */
+    transform: translateX(10px);
+}
+
+.divider-IqmEqJ .unreadPill-3nEWYM {
+    /* 最新消息提醒 */
+    right: 40%;
+}
+
+.peopleListItem-u6dGxF {
+    /* 好友列表 */
+   transition: var(--transition-025-linear);
+}
+
+.peopleListItem-u6dGxF:hover {
+    /* 好友列表动画 */
+    transform: translateY(-5px);
+}
+
+.button-12Fmur {
+    /* 麦克风&耳机 */
+    transition: var(--transition-025-linear);
+}
+
+.button-12Fmur:hover {
+    /* 麦克风&耳机 动画 */
+    transform: translateY(-5px);
+}
+
+.member-2gU6Ar {
+    /* 服务器成员列表 */
+    background: none;
+    transition: var(--transition-025-linear);
+}
+
+.member-2gU6Ar:hover {
+    /* 服务器成员列表动画 */
+    transform: translateX(-5px);
+}
+
+.avatarWrapper-1B9FTW:hover {
+    background: none;
+}
+
+.button-ejjZWC {
+    transition: var(--transition-025-linear);
+}
+
+.button-ejjZWC:hover {
+    transform: translateY(-5px);
+}
+
+/* friend list */
+.channel-1Shao0 {
+    transition: var(--transition-025-linear);
+    padding: 5px 1.2/1.5px;
+    margin: 2px auto;
+}
+
+.channel-1Shao0:hover {
+    transform: translateX(10px);
+}
+
+/* server control button */
+.iconWrapper-2awDjA {
+    transition: var(--transition-025-linear);
+}
+
+/* search bar */
+.search-39IXmY {
+    transition: var(--transition-025-linear);
+}
+
+/* icon */
+.iconWrapper-2awDjA:hover {
+    transform: translateY(-5px);
+}
+
+
+/* setting */
+.side-1lrxIh .separator-2N511j,
+.divider-3nqZNm {
+    display: none;
+}
+
+.side-1lrxIh .item-2GWPIy {
+    padding: 10px 10px;
+    margin: 5px;
+    transition: var(--transition-025-linear);
+}
+
+.side-1lrxIh .item-2GWPIy:hover {
+    transform: translateX(10px);
+}
+
+/* voice */
+.textButton-14fgNw {
+    display: none;
+}
+
+.buttonContainer-1sjtPU {
+    display: none;
+}
+
+.overlayContainer-1suEh7 {
+    height: 100% !important;
+    width: 100% !important;
+}
