@@ -4,20 +4,122 @@
  * @version 0.0.1
  */
 
-@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css);
+@import url('https://raw.githack.com/v-briese/Channel-Icons/main/channelicons.theme.css');
+@import url('https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+
 
 :root {
     --transition-025-linear: 0.25s linear;
+    --app-bg: url(https://raw.githubusercontent.com/lingtian152/bg/main/v2-723ed82d21b778a58da25fccd42642d4_720w.png);
+    --app-blur: 6px;
+    --app-margin: 24px;
+    --app-radius: 10px;
+    --sidebar-color: rgba(0, 0, 0, 0.4);
+    --main-content-color: rgba(0, 0, 0, 0.2);
+    --accent-hue: 156;
+    --accent-saturation: 77.5%;
+    --accent-lightness: 47.1%;
+    --accent-hsl: var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness);
+    --accent-opacity: 1;
+    --accent-text-color: #000;
+    --alert-hue: 359;
+    --alert-saturation: 66.7%;
+    --alert-lightness: 54.1%;
+    --alert-hsl: var(--alert-hue), calc(var(--alert-saturation) * var(--saturation-factor)), var(--alert-lightness);
+    --alert-opacity: 1;
+    --alert-action-color: #fff;
+    --alert-text-color: #fff;
+    --message-color: rgba(0, 0, 0, 0.4);
+    --message-color-hover: rgba(0, 0, 0, 0.55);
+    --message-radius: var(--app-radius);
+    --message-padding-top: 8px;
+    --message-padding-side: 8px;
+    --mention-hue: var(--accent-hue);
+    --mention-saturation: var(--accent-saturation);
+    --mention-lightness: var(--accent-lightness);
+    --mention-hsl: var(--mention-hue), calc(var(--mention-saturation) * var(--saturation-factor)), var(--mention-lightness);
+    --mention-opacity: 1;
+    --reply-hue: 226;
+    --reply-saturation: 77.4%;
+    --reply-lightness: 61.8%;
+    --reply-hsl: var(--reply-hue), calc(var(--reply-saturation) * var(--saturation-factor)), var(--reply-lightness);
+    --reply-opacity: 1;
+    --notification-color: #fff;
+    --list-item-radius: var(--app-radius);
+    --textarea-color: 255, 255, 255;
+    --textarea-alpha: 0.1;
+    --textarea-alpha-focus: 0.15;
+    --textarea-text-color: #fff;
+    --textarea-placeholder-color: #aaa;
+    --textarea-radius: 22px;
+    --textarea-block-color: rgba(0, 0, 0, 0.4);
+    --textarea-block-text-color: #ccc;
+    --input-height: 36px;
+    --input-radius: calc(var(--input-height) / 2);
+    --card-color: rgba(0, 0, 0, 0.4);
+    --card-color-hover: rgba(0, 0, 0, 0.5);
+    --card-color-select: rgba(0, 0, 0, 0.625);
+    --card-radius: var(--app-radius);
+    --card-header-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.25);
+    --button-height: 32px;
+    --button-padding: 0 16px;
+    --button-color: hsla(var(--accent-hsl), var(--accent-opacity));
+    --button-action-color: #000;
+    --button-text-color: var(--accent-text-color);
+    --button-radius: 16px;
+    --switch-slider-color: hsla(218, 4.6%, 46.9%, 0.85);
+    --switch-knob-color: hsl(0, 0%, 13%);
+    --popout-color: rgba(0, 0, 0, 0.55);
+    --popout-blur: 8px;
+    --popout-header-opacity: 0.3;
+    --popout-header-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.25);
+    --popout-radius: var(--app-radius);
+    --popout-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    --nowplaying-color: 88, 101, 242;
+    --streaming-color: 89, 54, 149;
+    --spotify-color: 29, 185, 84;
+    --server-folder-color: rgba(255, 255, 255, 0.1);
+    --supporter-color: hsla(var(--accent-hsl), var(--accent-opacity));
+    --tooltip-color: hsla(var(--accent-hsl), var(--accent-opacity));
+    --tooltip-text-color: var(--accent-text-color);
+    --tooltip-font-size: 14px;
+    --tooltip-padding: 8px 12px;
+    --tooltip-radius: var(--app-radius);
+    --tooltip-shadow: var(--elevation-high);
+    --interactive-normal: #aaa;
+    --interactive-hover: #ddd;
+    --interactive-active: #fff;
+    --interactive-muted: #777;
+    --channels-default: #aaa;
+    --header-secondary: #dfdfdf;
+    --background-primary: transparent;
+    --channels-default: var(--interactive-normal);
+    --text-muted: var(--interactive-normal);
+    --transition-time: 250ms;
+    --transition-type: cubic-bezier(0.4, 0, 0.2, 1);
+    --scrollbar-color: 255, 255, 255;
+    --scrollbar-color-alt: 0, 0, 0;
+    --scrollbar-opacity: 0.2;
+    --scrollbar-opacity-hover: 0.3;
+    --scrollbar-width: 10px;
 }
 
 * {
     margin: 0;
     padding: 0;
     outline: hidden !important;
+    will-change: auto;
 }
 
 body,
 /* body														*/
+#app-mount .appAsidePanelWrapper-ev4hlp,
+#app-mount .container-1eFtFS,
+#app-mount .wrapper-1_HaEi,
+#app-mount .base-2jDfDU>*,
+#app-mount .base-2jDfDU,
 #app-mount .app-3xd6d0,
 /* app					container							*/
 #app-mount .app-2CXKsg,
@@ -37,8 +139,14 @@ body,
 #app-mount .privateChannels-oVe7HL,
 /* dmchannels												*/
 #app-mount .panels-3wFtMD>*,
+#app-mount .panels-3wFtMD,
+#app-mount .wrapper-3Hk9OB,
+#app-mount .wrapper-3Hk9OB>*,
+#app-mount .container-1zzFcN,
+#app-mount .charCounterAdded-zz9O4t,
+#app-mount .inner-NQg18Y,
 /* account/voice		inner								*/
-#app-mount .chat-2ZfjoI,
+#app-mount .chat-2ZfjoI>*,
 /* chat					container							*/
 #app-mount .container-3wLKDe,
 /* chat					forums								*/
@@ -72,9 +180,80 @@ body,
 /* scroller													*/
 #app-mount .standardSidebarView-E9Pc3j,
 /* settings													*/
-#app-mount .contentRegion-3HkfJJ {
+#app-mount .contentRegion-3HkfJJ,
+#app-mount .content-1SgpWY,
+#app-mount .scroller-1ox3I2,
+#app-mount .sidebar-1tnWFu,
+#app-mount .uploadContainer-TCg-Ji,
+#app-mount .upload-vLbqu-,
+#app-mount .privateChannels-oVe7HL .searchBar-3TnChZ,
+#app-mount .nowPlayingColumn-1eCBCN,
+#app-mount .scroller-hE2gWq,
+#app-mount .container-ZMc96U,
+#app-mount .searchBar-2aylmZ,
+#app-mount .thin-RnSY0a .itemCard-3Etziu,
+#app-mount .thin-RnSY0a .itemCard-3Etziu>*,
+#app-mount .body-16rSsp,
+.accountProfileCard-lbN7n-,
+.background-3d_SjE,
+.fieldList-in8WkP {
     /* settings				content								*/
     background: transparent;
+    background-color: transparent;
+}
+
+.scrollableContainer-15eg7h {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    border: 0.25px solid rgba(37, 37, 37, 0.627);
+}
+
+.scrollableContainer-15eg7h .placeholder-1rCBhr,
+.markup-eYLPri,
+.filename-jyRDv_ {
+    color: white !important;
+}
+
+.homeIcon-r0w4ny,
+.childWrapper-1j_1ub {
+    background: transparent;
+}
+
+.separator-3ng7S5::before {
+    display: none !important;
+}
+
+.appMount-2yBXZl {
+    /* background img */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: var(--app-bg) !important;
+
+    /* backdrop blur */
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    /* 兼容性支持 */
+}
+
+.appMount-2yBXZl::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    /* 兼容性支持 */
+}
+
+.layerContainer-2lfOPe>* {
+    transition: var(--transition-025-linear);
+}
+
+.layerContainer-2lfOPe {
+    transition: var(--transition-025-linear);
 }
 
 /* discord名字 */
@@ -95,11 +274,25 @@ body,
     text-overflow: ellipsis;
 }
 
-
 /* main frame */
-.listItem-3SmSlK .guildSeparator-a4uisj {
+.listItem-3SmSlK .guildSeparator-a4uisj,
+.searchBar-3TnChZ {
     display: none !important;
 }
+
+.content-1jQy2l::before {
+    /* 内容 */
+    display: none !important;
+}
+
+.scroller-kQBbkU::-webkit-scrollbar,
+.scroller-1ox3I2::-webkit-scrollbar,
+.sidebarRegionScroller-FXiQOh::-webkit-scrollbar,
+.contentRegionScroller-2_GT_N::-webkit-scrollbar {
+    /* 滚动条 */
+    display: none;
+}
+
 
 .pill-2RsI5Q,
 .pill-2RsI5Q .item-2LIpTv,
@@ -152,7 +345,7 @@ body,
 
 .peopleListItem-u6dGxF {
     /* 好友列表 */
-   transition: var(--transition-025-linear);
+    transition: var(--transition-025-linear);
 }
 
 .peopleListItem-u6dGxF:hover {
@@ -230,6 +423,7 @@ body,
     padding: 10px 10px;
     margin: 5px;
     transition: var(--transition-025-linear);
+    color: white !important;
 }
 
 .side-1lrxIh .item-2GWPIy:hover {
